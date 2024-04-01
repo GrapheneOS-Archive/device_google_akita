@@ -50,6 +50,9 @@
                     <profile name="" format="AUDIO_FORMAT_AAC_HE_V2"
                              samplingRates="8000 16000 24000 32000 44100 48000"
                              channelMasks="AUDIO_CHANNEL_OUT_STEREO AUDIO_CHANNEL_OUT_MONO"/>
+                    <profile name="" format="AUDIO_FORMAT_OPUS"
+                             samplingRates="8000 16000 24000 32000 44100 48000"
+                             channelMasks="AUDIO_CHANNEL_OUT_STEREO AUDIO_CHANNEL_OUT_MONO"/>
                 </mixPort>
                 <mixPort name="haptic" role="source">
                     <profile name="" format="AUDIO_FORMAT_PCM_16_BIT"
@@ -131,10 +134,6 @@
                 </devicePort>
                 <devicePort tagName="Speaker Safe" type="AUDIO_DEVICE_OUT_SPEAKER_SAFE" role="sink">
                 </devicePort>
-                <devicePort tagName="Wired Headset" type="AUDIO_DEVICE_OUT_WIRED_HEADSET" role="sink">
-                </devicePort>
-                <devicePort tagName="Wired Headphones" type="AUDIO_DEVICE_OUT_WIRED_HEADPHONE" role="sink">
-                </devicePort>
                 <devicePort tagName="BT SCO" type="AUDIO_DEVICE_OUT_BLUETOOTH_SCO" role="sink">
                 </devicePort>
                 <devicePort tagName="BT SCO Headset" type="AUDIO_DEVICE_OUT_BLUETOOTH_SCO_HEADSET" role="sink">
@@ -153,8 +152,6 @@
                 <devicePort tagName="Built-In Mic" type="AUDIO_DEVICE_IN_BUILTIN_MIC" role="source">
                 </devicePort>
                 <devicePort tagName="Built-In Back Mic" type="AUDIO_DEVICE_IN_BACK_MIC" role="source">
-                </devicePort>
-                <devicePort tagName="Wired Headset Mic" type="AUDIO_DEVICE_IN_WIRED_HEADSET" role="source">
                 </devicePort>
                 <devicePort tagName="BT SCO Headset Mic" type="AUDIO_DEVICE_IN_BLUETOOTH_SCO_HEADSET" role="source">
                 </devicePort>

@@ -49,6 +49,9 @@
                     <profile name="" format="AUDIO_FORMAT_AAC_HE_V2"
                              samplingRates="8000 16000 24000 32000 44100 48000"
                              channelMasks="AUDIO_CHANNEL_OUT_STEREO AUDIO_CHANNEL_OUT_MONO"/>
+                    <profile name="" format="AUDIO_FORMAT_OPUS"
+                             samplingRates="8000 16000 24000 32000 44100 48000"
+                             channelMasks="AUDIO_CHANNEL_OUT_STEREO AUDIO_CHANNEL_OUT_MONO"/>
                 </mixPort>
                 <mixPort name="haptic" role="source">
                     <profile name="" format="AUDIO_FORMAT_PCM_16_BIT"
