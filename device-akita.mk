@@ -413,3 +413,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/window_extensions.mk)
 # Disable Settings large-screen optimization enabled by Window Extensions
 PRODUCT_SYSTEM_PROPERTIES += \
     persist.settings.large_screen_opt.enabled=false
+
+# ETM
+ifneq (,$(filter userdebug eng, $(TARGET_BUILD_VARIANT)))
+$(call inherit-product-if-exists, device/google/common/etm/device-userdebug-modules.mk)
+endif
