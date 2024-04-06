@@ -14,7 +14,8 @@
 # limitations under the License.
 #
 
-PRODUCT_RELEASE_CONFIG_MAPS += vendor/google_devices/release/phones/release_config_map.mk
+PRODUCT_RELEASE_CONFIG_MAPS += $(wildcard vendor/google_devices/release/phones/pixel_2024/release_config_map.mk)
+
 
 ifdef RELEASE_GOOGLE_AKITA_KERNEL_VERSION
 TARGET_LINUX_KERNEL_VERSION := $(RELEASE_GOOGLE_AKITA_KERNEL_VERSION)
