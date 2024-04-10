@@ -2867,6 +2867,7 @@
       "Value": "20 80"
     }
   ],
+  "GpuSysfsPath" : "/sys/devices/platform/1f000000.mali",
   "AdpfConfig": [
     {
       "Name": "REFRESH_120FPS",
@@ -2890,7 +2891,9 @@
       "EarlyBoost_On": false,
       "EarlyBoost_TimeFactor": 0.0,
       "TargetTimeFactor": 1.0,
-      "StaleTimeFactor": 15.0
+      "StaleTimeFactor": 15.0,
+      "GpuBoost": true,
+      "GpuCapacityBoostMax": 40000
     },
     {
       "Name": "REFRESH_90FPS",
@@ -2914,7 +2917,9 @@
       "EarlyBoost_On": false,
       "EarlyBoost_TimeFactor": 0.0,
       "TargetTimeFactor": 1.0,
-      "StaleTimeFactor": 15.0
+      "StaleTimeFactor": 15.0,
+      "GpuBoost": true,
+      "GpuCapacityBoostMax": 32500
     },
     {
       "Name": "REFRESH_60FPS",
@@ -2938,7 +2943,9 @@
       "EarlyBoost_On": false,
       "EarlyBoost_TimeFactor": 0.0,
       "TargetTimeFactor": 1.0,
-      "StaleTimeFactor": 15.0
+      "StaleTimeFactor": 15.0,
+      "GpuBoost": true,
+      "GpuCapacityBoostMax": 25000
     },
     {
       "Name": "UiHighBoostWithoutPid",
@@ -2962,7 +2969,8 @@
       "EarlyBoost_On": false,
       "EarlyBoost_TimeFactor": 0.0,
       "TargetTimeFactor": 1.0,
-      "StaleTimeFactor": 5.0
+      "StaleTimeFactor": 5.0,
+      "GpuBooost" : false
     },
     {
       "Name": "UiLowBoostWithoutPid",
@@ -2986,7 +2994,8 @@
       "EarlyBoost_On": false,
       "EarlyBoost_TimeFactor": 0.0,
       "TargetTimeFactor": 1.0,
-      "StaleTimeFactor": 5.0
+      "StaleTimeFactor": 5.0,
+      "GpuBooost" : false
     },
     {
       "Name": "UiLowNoneBoost",
@@ -3010,7 +3019,8 @@
       "EarlyBoost_On": false,
       "EarlyBoost_TimeFactor": 0.0,
       "TargetTimeFactor": 1.0,
-      "StaleTimeFactor": 5.0
+      "StaleTimeFactor": 5.0,
+      "GpuBooost" : false
     }
   ]
 }
