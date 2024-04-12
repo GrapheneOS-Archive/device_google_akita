@@ -259,7 +259,7 @@ endif
 
 # Enable Bluetooth AutoOn feature
 PRODUCT_PRODUCT_PROPERTIES += \
-    bluetooth.server.automatic_turn_on=true
+    bluetooth.server.automatic_turn_on=false
 
 # Spatial Audio
 PRODUCT_PACKAGES += \
