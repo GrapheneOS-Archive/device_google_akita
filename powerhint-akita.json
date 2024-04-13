@@ -2975,7 +2975,15 @@
       "TargetTimeFactor": 1.0,
       "StaleTimeFactor": 15.0,
       "GpuBoost": true,
-      "GpuCapacityBoostMax": 40000
+      "GpuCapacityBoostMax": 40000,
+      "HeuristicBoost_On": true,
+      "HBoostOnMissedCycles": 8,
+      "HBoostOffMaxAvgRatio": 4.0,
+      "HBoostOffMissedCycles": 5,
+      "HBoostPidPuFactor": 0.5,
+      "HBoostUclampMin": 722,
+      "LowFrameRateThreshold": 25,
+      "MaxRecordsNum": 300
     },
     {
       "Name": "REFRESH_90FPS",
@@ -3001,7 +3009,15 @@
       "TargetTimeFactor": 1.0,
       "StaleTimeFactor": 15.0,
       "GpuBoost": true,
-      "GpuCapacityBoostMax": 32500
+      "GpuCapacityBoostMax": 32500,
+      "HeuristicBoost_On": true,
+      "HBoostOnMissedCycles": 8,
+      "HBoostOffMaxAvgRatio": 4.0,
+      "HBoostOffMissedCycles": 5,
+      "HBoostPidPuFactor": 0.5,
+      "HBoostUclampMin": 722,
+      "LowFrameRateThreshold": 25,
+      "MaxRecordsNum": 300
     },
     {
       "Name": "REFRESH_60FPS",
@@ -3027,7 +3043,15 @@
       "TargetTimeFactor": 1.0,
       "StaleTimeFactor": 15.0,
       "GpuBoost": true,
-      "GpuCapacityBoostMax": 25000
+      "GpuCapacityBoostMax": 25000,
+      "HeuristicBoost_On": true,
+      "HBoostOnMissedCycles": 8,
+      "HBoostOffMaxAvgRatio": 4.0,
+      "HBoostOffMissedCycles": 5,
+      "HBoostPidPuFactor": 0.5,
+      "HBoostUclampMin": 722,
+      "LowFrameRateThreshold": 25,
+      "MaxRecordsNum": 300
     },
     {
       "Name": "UiHighBoostWithoutPid",
