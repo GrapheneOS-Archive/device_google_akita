@@ -17,17 +17,17 @@
 PRODUCT_RELEASE_CONFIG_MAPS += $(wildcard vendor/google_devices/release/phones/pixel_2024/release_config_map.mk)
 
 
-ifdef RELEASE_GOOGLE_AKITA_KERNEL_VERSION
-TARGET_LINUX_KERNEL_VERSION := $(RELEASE_GOOGLE_AKITA_KERNEL_VERSION)
+ifdef RELEASE_KERNEL_AKITA_VERSION
+TARGET_LINUX_KERNEL_VERSION := $(RELEASE_KERNEL_AKITA_VERSION)
 endif
 
-ifdef RELEASE_GOOGLE_AKITA_KERNEL_DIR
+ifdef RELEASE_KERNEL_AKITA_DIR
 # Keeps flexibility for kasan and ufs builds
-TARGET_KERNEL_DIR ?= $(RELEASE_GOOGLE_AKITA_KERNEL_DIR)
-TARGET_BOARD_KERNEL_HEADERS ?= $(RELEASE_GOOGLE_AKITA_KERNEL_DIR)/kernel-headers
+TARGET_KERNEL_DIR ?= $(RELEASE_KERNEL_AKITA_DIR)
+TARGET_BOARD_KERNEL_HEADERS ?= $(RELEASE_KERNEL_AKITA_DIR)/kernel-headers
 else
-TARGET_KERNEL_DIR ?= device/google/akita-kernel
-TARGET_BOARD_KERNEL_HEADERS ?= device/google/akita-kernel/kernel-headers
+TARGET_KERNEL_DIR ?= device/google/akita-kernels/5.15/trunk
+TARGET_BOARD_KERNEL_HEADERS ?= device/google/akita-kernels/5.15/trunk/kernel-headers
 endif
 
 $(call inherit-product-if-exists, vendor/google_devices/akita/prebuilts/device-vendor-akita.mk)
