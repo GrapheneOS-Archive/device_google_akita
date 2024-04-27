@@ -259,7 +259,7 @@ endif
 
 # Enable Bluetooth AutoOn feature
 PRODUCT_PRODUCT_PROPERTIES += \
-    bluetooth.server.automatic_turn_on=false
+    bluetooth.server.automatic_turn_on=true
 
 # Spatial Audio
 PRODUCT_PACKAGES += \
@@ -378,7 +378,7 @@ PRODUCT_VENDOR_PROPERTIES += \
 
 # Increment the SVN for any official public releases
 PRODUCT_VENDOR_PROPERTIES += \
-    ro.vendor.build.svn=9
+    ro.vendor.build.svn=10
 
 # Keyboard height ratio and bottom padding in dp for portrait mode
 PRODUCT_PRODUCT_PROPERTIES += \
