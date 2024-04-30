@@ -32,3 +32,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Factory binaries of camera
 PRODUCT_PACKAGES += fatp_ak3_wide_hat_tool
+
+# preloaded_nanoapps.json
+PRODUCT_SOONG_NAMESPACES += vendor/google_contexthub/devices/factory
