@@ -1,5 +1,5 @@
 # Enable pixel gnss hal service
-include device/google/akita/location/gnssd/pixel_gnss_hal.mk
+include vendor/google/gnss/aidl_service/pixel_gnss_hal.mk
 
 PRODUCT_PACKAGES += \
     gnssd \
