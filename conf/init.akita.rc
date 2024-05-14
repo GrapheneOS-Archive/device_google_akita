@@ -93,9 +93,3 @@ on property:vendor.all.modules.ready=1
 # Start the twoshay touch service
 on property:vendor.device.modules.ready=1
     start twoshay
-
-# For Japan sku, always enforce camera shutter sound
-# Since this property is read by the audio server in system service,
-# it should be written by the system init.
-on property:ro.boot.hardware.sku=G576D
-    setprop audio.camerasound.force true
