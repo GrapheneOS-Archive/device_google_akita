@@ -308,4 +308,6 @@
          config_useGnssHardwareProvider is false. -->
     <string name="config_gnssLocationProviderPackageName" translatable="false">com.google.android.gms</string>
 
+    <string name="config_gnssPsdsType">samsung</string>
+
 </resources>
