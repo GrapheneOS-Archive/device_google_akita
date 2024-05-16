@@ -450,3 +450,7 @@ PRODUCT_CHECK_PREBUILT_MAX_PAGE_SIZE := true
 # Akita: 0x410F
 PRODUCT_PRODUCT_PROPERTIES += \
     bluetooth.device_id.product_id=16655
+
+# sysconfigs from stock OS
+PRODUCT_COPY_FILES += \
+    device/google/akita/product-sysconfig-stock.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/product-sysconfig-stock.xml
