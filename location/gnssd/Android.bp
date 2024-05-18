@@ -93,4 +93,7 @@ cc_prebuilt_binary {
             ],
         },
     },
+    required: [
+        "libcustomgnss",
+    ],
 }
