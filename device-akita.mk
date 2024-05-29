@@ -219,11 +219,11 @@ PRODUCT_PACKAGES += \
 
 # LE Audio Lunch Config for Phase 1 (LE audio toggle hidden by default)
 PRODUCT_PRODUCT_PROPERTIES += \
-    persist.bluetooth.leaudio.toggle_visible=false
+    persist.bluetooth.leaudio.toggle_visible=true
 
 # LE Audio use classic connection by default
 PRODUCT_PRODUCT_PROPERTIES += \
-    ro.bluetooth.leaudio.le_audio_connection_by_default=false
+    ro.bluetooth.leaudio.le_audio_connection_by_default=true
 
 # Bluetooth LE Audio CIS handover to SCO
 # Set the property only for the controller couldn't support CIS/SCO simultaneously. More detailed in b/242908683.
