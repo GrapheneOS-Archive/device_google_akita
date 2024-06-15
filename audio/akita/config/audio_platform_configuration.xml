@@ -303,7 +303,7 @@
         <module libname="audio_waves_aoc.so" argu="Sink=SPK:1 ThermistorsName=VIRTUAL-SKIN-SPEAKER"/>
         <module libname="audio_cca_aoc.so" argu="UnsupportBands=48000 ExSharedBands=48000 VoIPMode=Dl"/>
         <module libname="audio_fortemedia_aoc.so" argu="MCPS_TABLE=y DL_CH=y VoIP_DLCHs=SPK:2,USB:2,BT:2 VoIP_Rate=32000 SHARED_MODULE=1130578253"/>
-        <module libname="audio_sounddose_aoc.so"/>
+        <module libname="audio_sounddose_aoc.so" argu="Blackbird,Condor=0,46.35,0.1950549451;54.6,57,0.98625"/>
         <module libname="liboffloadeffect.so"/>
         <module libname="audio_amcs_ext.so"/>
         <module libname="audio_bluenote_aoc.so"/>
