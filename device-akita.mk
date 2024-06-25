@@ -336,11 +336,7 @@ PRODUCT_VENDOR_PROPERTIES += \
 	persist.vendor.camera.increase_thread_priority_nodes_stop=true
 
 # Fingerprint HAL
-ifneq (,$(filter AP4%,$(RELEASE_PLATFORM_VERSION)))
-GOODIX_CONFIG_BUILD_VERSION := g7_trusty_next
-else
 GOODIX_CONFIG_BUILD_VERSION := g7_trusty
-endif
 $(call inherit-product-if-exists, vendor/goodix/udfps/configuration/udfps_common.mk)
 ifeq ($(filter factory%, $(TARGET_PRODUCT)),)
 $(call inherit-product-if-exists, vendor/goodix/udfps/configuration/udfps_shipping.mk)
