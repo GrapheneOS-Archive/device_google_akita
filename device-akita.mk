@@ -33,6 +33,11 @@ ifeq ($(PRODUCT_BOOTS_16K),true)
 TARGET_USERDATAIMAGE_FILE_SYSTEM_TYPE := ext4
 TARGET_KERNEL_DIR := $(RELEASE_KERNEL_AKITA_DIR)/16kb
 TARGET_RW_FILE_SYSTEM_TYPE := ext4
+else
+# include GNSSD
+# TODO(b/346851807): Temporarily include gnss service only on 4k page size
+# build.
+include device/google/akita/location/gnssd/device-gnss.mk
 endif
 
 $(call inherit-product-if-exists, vendor/google_devices/akita/prebuilts/device-vendor-akita.mk)
@@ -328,9 +333,6 @@ PRODUCT_PACKAGES += \
 
 # Trusty liboemcrypto.so
 PRODUCT_SOONG_NAMESPACES += vendor/google_devices/akita/prebuilts
-
-# include GNSSD
-include device/google/akita/location/gnssd/device-gnss.mk
 
 # Set zram size
 PRODUCT_VENDOR_PROPERTIES += \
