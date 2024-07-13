@@ -385,8 +385,15 @@ PRODUCT_VENDOR_PROPERTIES += \
 	persist.vendor.vibrator.hal.context.settlingtime=5000
 
 # Increment the SVN for any official public releases
+ifdef RELEASE_SVN_AKITA
+TARGET_SVN ?= $(RELEASE_SVN_AKITA)
+else
+# Set this for older releases that don't use build flag
+TARGET_SVN ?= 15
+endif
+
 PRODUCT_VENDOR_PROPERTIES += \
-    ro.vendor.build.svn=15
+    ro.vendor.build.svn=$(TARGET_SVN)
 
 # Keyboard height ratio and bottom padding in dp for portrait mode
 PRODUCT_PRODUCT_PROPERTIES += \
