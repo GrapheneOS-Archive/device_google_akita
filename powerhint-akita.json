@@ -229,7 +229,7 @@
         "750000",
         "10000"
       ],
-      "DefaultIndex": 0,
+      "DefaultIndex": 1,
       "ResetOnInit": true
     },
     {
@@ -239,7 +239,7 @@
         "750000",
         "10000"
       ],
-      "DefaultIndex": 0,
+      "DefaultIndex": 1,
       "ResetOnInit": true
     },
     {
@@ -1226,16 +1226,21 @@
       "Value": "DISPLAY_UPDATE_IMMINENT"
     },
     {
-      "PowerHint": "DISPLAY_INACTIVE",
-      "Node": "BigClusterPowerDownTargetResidency",
-      "Duration": 0,
-      "Value": "10000"
+      "PowerHint": "DISPLAY_IDLE",
+      "Type": "EndHint",
+      "Value": "INTERACTION"
     },
     {
-      "PowerHint": "DISPLAY_INACTIVE",
+      "PowerHint": "INTERACTION",
+      "Node": "BigClusterPowerDownTargetResidency",
+      "Duration": 2000,
+      "Value": "750000"
+    },
+    {
+      "PowerHint": "INTERACTION",
       "Node": "MidClusterPowerDownTargetResidency",
-      "Duration": 0,
-      "Value": "10000"
+      "Duration": 2000,
+      "Value": "750000"
     },
     {
       "PowerHint": "DISPLAY_INACTIVE",
