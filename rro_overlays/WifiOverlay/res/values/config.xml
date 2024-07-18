@@ -140,7 +140,7 @@
 
     <!-- Boolean indicating whether we should enable the STA current connected indoor channel
      for SAP, WFD GO, Wi-Fi Aware -->
-    <bool translatable="false" name="config_wifiEnableStaIndoorChannelForPeerNetwork">true</bool>
+    <bool translatable="false" name="config_wifiEnableStaIndoorChannelForPeerNetwork">false</bool>
     <!-- Boolean indicating whether we should enable the STA current connected DFS channel
          for SAP, WFD GO, Wi-Fi Aware -->
     <bool translatable="false" name="config_wifiEnableStaDfsChannelForPeerNetwork">true</bool>
