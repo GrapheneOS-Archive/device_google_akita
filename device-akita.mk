@@ -389,7 +389,7 @@ ifdef RELEASE_SVN_AKITA
 TARGET_SVN ?= $(RELEASE_SVN_AKITA)
 else
 # Set this for older releases that don't use build flag
-TARGET_SVN ?= 15
+TARGET_SVN ?= 18
 endif
 
 PRODUCT_VENDOR_PROPERTIES += \
