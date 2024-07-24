@@ -302,12 +302,6 @@
     <!-- MMS user agent profile url -->
     <string name="config_mms_user_agent_profile_url" translatable="false">http://www.gstatic.com/android/sms/GKV4X.xml</string>
 
-    <!-- Allow the GPS_PROVIDER to be replaced by the location provider app at run-time. -->
-    <bool name="config_useGnssHardwareProvider" translatable="false">false</bool>
-    <!-- Package name providing GNSS location support. Used only when
-         config_useGnssHardwareProvider is false. -->
-    <string name="config_gnssLocationProviderPackageName" translatable="false">com.google.android.gms</string>
-
     <string name="config_gnssPsdsType">samsung</string>
 
 </resources>
