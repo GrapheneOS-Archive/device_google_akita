@@ -386,6 +386,10 @@ PRODUCT_VENDOR_PROPERTIES += \
 	persist.vendor.vibrator.hal.context.cooldowntime=1600 \
 	persist.vendor.vibrator.hal.context.settlingtime=5000
 
+# Override Output Distortion Gain
+PRODUCT_VENDOR_PROPERTIES += \
+    vendor.audio.hapticgenerator.distortion.output.gain=0.29
+
 # Increment the SVN for any official public releases
 ifdef RELEASE_SVN_AKITA
 TARGET_SVN ?= $(RELEASE_SVN_AKITA)
