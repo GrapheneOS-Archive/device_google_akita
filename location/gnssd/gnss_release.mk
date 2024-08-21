@@ -8,9 +8,6 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss-service \
     android.hardware.location.gps.prebuilt.xml
 
-PRODUCT_COPY_FILES += \
-    device/google/akita/location/gnssd/release/ca.pem:vendor/etc/gnss/ca.pem
-
 PRODUCT_SOONG_NAMESPACES += \
     device/google/akita/location/gnssd
 
