@@ -437,5 +437,6 @@ PRODUCT_NO_BIONIC_PAGE_SIZE_MACRO := true
 PRODUCT_CHECK_PREBUILT_MAX_PAGE_SIZE := true
 
 # Bluetooth device id
+# Akita: 0x410F
 PRODUCT_PRODUCT_PROPERTIES += \
-    bluetooth.device_id.product_id=20495
+    bluetooth.device_id.product_id=16655

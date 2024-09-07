@@ -39,6 +39,7 @@ BOARD_KERNEL_CMDLINE += disable_dma32=on
 
 include device/google/zuma/BoardConfig-common.mk
 -include vendor/google_devices/zuma/prebuilts/BoardConfigVendor.mk
+include device/google/gs-common/check_current_prebuilt/check_current_prebuilt.mk
 -include vendor/google_devices/akita/proprietary/BoardConfigVendor.mk
 include device/google/akita-sepolicy/akita-sepolicy.mk
 include device/google/akita/wifi/BoardConfig-wifi.mk
