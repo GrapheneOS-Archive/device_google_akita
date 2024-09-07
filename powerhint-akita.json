@@ -219,7 +219,6 @@
         "0",
         "1"
       ],
-      "DefaultIndex": 0,
       "ResetOnInit": true
     },
     {
@@ -439,7 +438,6 @@
         "1",
         "0"
       ],
-      "DefaultIndex": 0,
       "ResetOnInit": true
     },
     {
@@ -485,7 +483,6 @@
         "1",
         "0"
       ],
-      "DefaultIndex": 0,
       "ResetOnInit": true
     },
     {
