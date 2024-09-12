@@ -34,6 +34,10 @@ $(call inherit-product-if-exists, vendor/google_devices/akita/proprietary/Wallpa
 
 DEVICE_PACKAGE_OVERLAYS += device/google/akita/akita/overlay
 
+ifeq ($(RELEASE_PIXEL_AIDL_AUDIO_HAL_ZUMA),true)
+USE_AUDIO_HAL_AIDL := true
+endif
+
 include device/google/akita/audio/akita/audio-tables.mk
 include device/google/zuma/device-shipping-common.mk
 include hardware/google/pixel/vibrator/cs40l26/device.mk
@@ -260,6 +264,17 @@ endif
 PRODUCT_PRODUCT_PROPERTIES += \
     bluetooth.server.automatic_turn_on=true
 
+ifeq ($(USE_AUDIO_HAL_AIDL),true)
+# AIDL
+
+# declare use of stereo spatialization
+PRODUCT_PROPERTY_OVERRIDES += \
+	ro.audio.stereo_spatialization_enabled=true \
+	ro.audio.spatializer_enabled=true
+
+else
+# HIDL
+
 # Spatial Audio
 PRODUCT_PACKAGES += \
 	libspatialaudio \
@@ -269,6 +284,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
 	android.hardware.audio.sounddose-vendor-impl \
 	audio_sounddose_aoc \
+
+endif
 
 # Audio CCA property
 PRODUCT_PROPERTY_OVERRIDES += \
