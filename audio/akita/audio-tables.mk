@@ -16,6 +16,11 @@
 
 AUDIO_TABLE_FOLDER := akita
 
+ifeq ($(USE_AUDIO_HAL_AIDL),true)
+PRODUCT_SOONG_NAMESPACES += device/google/akita/audio/$(AUDIO_TABLE_FOLDER)/aidl_config
+PRODUCT_PACKAGES += audio_aidl_configs
+
+else
 # Platform Configuration for AudioHAL / SoundTriggerHAL
 PRODUCT_COPY_FILES += \
     device/google/akita/audio/$(AUDIO_TABLE_FOLDER)/config/audio_policy_configuration_bluetooth_legacy_hal.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration_bluetooth_legacy_hal.xml \
@@ -26,6 +31,8 @@ PRODUCT_COPY_FILES += \
     device/google/akita/audio/$(AUDIO_TABLE_FOLDER)/config/audio_policy_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_volumes.xml \
     device/google/akita/audio/$(AUDIO_TABLE_FOLDER)/config/audio_policy_configuration_le_offload_disabled.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration_le_offload_disabled.xml \
     frameworks/av/services/audiopolicy/config/bluetooth_with_le_audio_policy_configuration_7_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_audio_policy_configuration_7_0.xml
+
+endif
 
 # AudioEffectHAL Configuration
 PRODUCT_COPY_FILES += \
@@ -74,5 +81,15 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     device/google/akita/audio/$(AUDIO_TABLE_FOLDER)/tuning/waves/tests/test_config.ini:$(TARGET_COPY_OUT_VENDOR)/etc/test_config.ini \
     device/google/akita/audio/$(AUDIO_TABLE_FOLDER)/tuning/waves/tests/test_preset.mps:$(TARGET_COPY_OUT_VENDOR)/etc/test_preset.mps
+
+endif
+
+ifeq ($(USE_AUDIO_HAL_AIDL),true)
+# Offload spatializer config
+PRODUCT_COPY_FILES += \
+    device/google/akita/audio/$(AUDIO_TABLE_FOLDER)/tuning/spatializer/base:$(TARGET_COPY_OUT_VENDOR)/etc/spatializer/base \
+    device/google/akita/audio/$(AUDIO_TABLE_FOLDER)/tuning/spatializer/mode_2_ch:$(TARGET_COPY_OUT_VENDOR)/etc/spatializer/mode_2_ch \
+    device/google/akita/audio/$(AUDIO_TABLE_FOLDER)/tuning/spatializer/mode_6_ch:$(TARGET_COPY_OUT_VENDOR)/etc/spatializer/mode_6_ch \
+    device/google/akita/audio/$(AUDIO_TABLE_FOLDER)/tuning/spatializer/mode_xaural:$(TARGET_COPY_OUT_VENDOR)/etc/spatializer/mode_xaural \
 
 endif
