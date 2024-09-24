@@ -233,6 +233,7 @@
   <ctl name="EP6 TX Mixer INCALL_TX" value="0" />
   <ctl name="NoHost1 TX Mixer INCALL_TX" value="0" />
 
+  <ctl name="EP5 TX Mixer INTERNAL_MIC_US_TX" value="0"/>
   <ctl name="EP4 TX Mixer I2S_2_TX" value="0" />
 
   <!-- AoC Mic setting -->
