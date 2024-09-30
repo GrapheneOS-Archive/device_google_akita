@@ -267,11 +267,6 @@ PRODUCT_PRODUCT_PROPERTIES += \
 ifeq ($(USE_AUDIO_HAL_AIDL),true)
 # AIDL
 
-# declare use of stereo spatialization
-PRODUCT_PROPERTY_OVERRIDES += \
-	ro.audio.stereo_spatialization_enabled=true \
-	ro.audio.spatializer_enabled=true
-
 else
 # HIDL
 
