@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-PRODUCT_RELEASE_CONFIG_MAPS += $(wildcard vendor/google_devices/release/phones/pixel_2024_midyear/release_config_map.textproto)
+PRODUCT_RELEASE_CONFIG_MAPS += $(wildcard vendor/google_devices/release/phones/./pixel_2024_midyear/release_config_map.textproto)
 
 TARGET_LINUX_KERNEL_VERSION := $(RELEASE_KERNEL_AKITA_VERSION)
 # Keeps flexibility for kasan and ufs builds
@@ -42,7 +42,7 @@ include device/google/akita/audio/akita/audio-tables.mk
 include device/google/zuma/device-shipping-common.mk
 include hardware/google/pixel/vibrator/cs40l26/device.mk
 include device/google/gs-common/bcmbt/bluetooth.mk
-include device/google/gs-common/touch/gti/gti.mk
+include device/google/gs-common/touch/gti/predump_gti.mk
 include device/google/gs-common/modem/radio_ext/radio_ext.mk
 
 # go/lyric-soong-variables
