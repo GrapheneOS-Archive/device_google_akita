@@ -1805,6 +1805,12 @@
     },
     {
       "PowerHint": "CAMERA_STREAMING_EXTREME",
+      "Node": "FGPreferIdle",
+      "Duration": 0,
+      "Value": "1"
+    },
+    {
+      "PowerHint": "CAMERA_STREAMING_EXTREME",
       "Node": "AutoPreferIdle",
       "Duration": 0,
       "Value": "0"
@@ -1973,6 +1979,12 @@
     },
     {
       "PowerHint": "CAMERA_STREAMING_HIGH",
+      "Node": "FGPreferIdle",
+      "Duration": 0,
+      "Value": "1"
+    },
+    {
+      "PowerHint": "CAMERA_STREAMING_HIGH",
       "Node": "AutoPreferIdle",
       "Duration": 0,
       "Value": "0"
@@ -2018,6 +2030,18 @@
       "Node": "CPUSkipMask",
       "Duration": 0,
       "Value": "0x0"
+    },
+    {
+      "PowerHint": "CAMERA_STREAMING_STANDARD",
+      "Node": "TAPreferIdle",
+      "Duration": 0,
+      "Value": "1"
+    },
+    {
+      "PowerHint": "CAMERA_STREAMING_STANDARD",
+      "Node": "FGPreferIdle",
+      "Duration": 0,
+      "Value": "1"
     },
     {
       "PowerHint": "CAMERA_STREAMING_STANDARD",
@@ -2177,6 +2201,18 @@
     },
     {
       "PowerHint": "CAMERA_STREAMING_LOW",
+      "Node": "TAPreferIdle",
+      "Duration": 0,
+      "Value": "1"
+    },
+    {
+      "PowerHint": "CAMERA_STREAMING_LOW",
+      "Node": "FGPreferIdle",
+      "Duration": 0,
+      "Value": "1"
+    },
+    {
+      "PowerHint": "CAMERA_STREAMING_LOW",
       "Node": "AutoPreferIdle",
       "Duration": 0,
       "Value": "0"
@@ -2300,6 +2336,12 @@
       "Node": "TAPreferIdle",
       "Duration": 0,
       "Value": "0"
+    },
+    {
+      "PowerHint": "CAMERA_STREAMING_VIDEO_CALL",
+      "Node": "FGPreferIdle",
+      "Duration": 0,
+      "Value": "1"
     },
     {
       "PowerHint": "CAMERA_STREAMING_VIDEO_CALL",
