@@ -2780,7 +2780,7 @@
       "PowerHint": "GAME",
       "Node": "AutoPreferIdle",
       "Duration": 0,
-      "Value": "0"
+      "Value": "1"
     },
     {
       "PowerHint": "GAME",
