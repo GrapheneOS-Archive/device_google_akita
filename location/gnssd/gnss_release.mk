@@ -11,6 +11,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_SOONG_NAMESPACES += \
     device/google/akita/location/gnssd
 
+DEVICE_PRODUCT_COMPATIBILITY_MATRIX_FILE += device/google/gs-common/proprietary/android.hardware.gnss.xml
 DEVICE_PRODUCT_COMPATIBILITY_MATRIX_FILE += device/google/gs-common/proprietary/vendor.google.aam.xml
 
 ifneq (,$(filter userdebug eng, $(TARGET_BUILD_VARIANT)))
