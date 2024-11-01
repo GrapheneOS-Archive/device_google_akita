@@ -171,4 +171,7 @@
                re-activated when the device exits idle mode.
          false: firmware roaming will not be affected. -->
     <bool translatable="false" name ="config_wifiDisableFirmwareRoamingInIdleMode">true</bool>
+
+    <!-- Boolean indicating whether to trigger bugreport for WiFi subsystem restart issue -->
+    <bool translatable="false" name ="config_wifi_subsystem_restart_bugreport_enabled">false</bool>
 </resources>
