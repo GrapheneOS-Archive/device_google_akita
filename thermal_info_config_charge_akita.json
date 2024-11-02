@@ -112,7 +112,7 @@
                     "CdevWeightForPID": [1, 1, 1, 1, 1, 1, 1],
                     "MaxReleaseStep": 1,
                     "MaxThrottleStep": 1,
-                    "CdevCeiling": [0, 25, 25, 25, 26, 26, 26],
+                    "CdevCeiling": [0, 21, 21, 21, 26, 26, 26],
                     "LimitInfo": [0, 0, 0, 0, 0, 26, 26]
                 }
             ]
