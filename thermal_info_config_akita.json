@@ -8,20 +8,17 @@
         {
             "Name":"modem_therm",
             "Type":"UNKNOWN",
-            "TempPath":"/dev/thermal/tz-by-name/modem_therm/tz_temp",
             "Multiplier":0.001
         },
         {
             "Name":"gnss_tcxo_therm",
             "Type":"UNKNOWN",
-            "TempPath":"/dev/thermal/tz-by-name/gnss_tcxo_therm/tz_temp",
             "Multiplier":0.001
         },
         {
             "Name":"usb_conn_therm",
             "Type":"UNKNOWN",
             "HotThreshold":["NAN", 36.0, "NAN", "NAN", "NAN", "NAN", "NAN"],
-            "TempPath":"/dev/thermal/tz-by-name/usb_conn_therm/tz_temp",
             "Multiplier":0.001,
             "PollingDelay":60000,
             "PassiveDelay":7000
@@ -29,7 +26,6 @@
         {
             "Name":"rffe_therm",
             "Type":"UNKNOWN",
-            "TempPath":"/dev/thermal/tz-by-name/rffe_therm/tz_temp",
             "Multiplier":0.001
         },
         {
@@ -37,7 +33,6 @@
             "Type":"UNKNOWN",
             "HotThreshold":["NAN", 36.0, "NAN", "NAN", "NAN", "NAN", "NAN"],
             "HotHysteresis":[0.0, 0.9, 0.0, 0.0, 0.0, 0.0, 0.0],
-            "TempPath":"/dev/thermal/tz-by-name/soc_therm/tz_temp",
             "Multiplier":0.001,
             "PollingDelay":60000,
             "PassiveDelay":7000
@@ -47,7 +42,6 @@
             "Type":"UNKNOWN",
             "HotThreshold":["NAN", 36.5, "NAN", "NAN", "NAN", "NAN", "NAN"],
             "HotHysteresis":[0.0, 0.9, 0.0, 0.0, 0.0, 0.0, 0.0],
-            "TempPath":"/dev/thermal/tz-by-name/charger_therm/tz_temp",
             "Multiplier":0.001,
             "PollingDelay":60000,
             "PassiveDelay":7000
@@ -55,108 +49,12 @@
         {
             "Name":"display_therm",
             "Type":"UNKNOWN",
-            "TempPath":"/dev/thermal/tz-by-name/display_therm/tz_temp",
             "Multiplier":0.001
         },
         {
             "Name":"quiet_therm",
             "Type":"UNKNOWN",
-            "TempPath":"/dev/thermal/tz-by-name/quiet_therm/tz_temp",
             "Multiplier":0.001
-        },
-        {
-            "Name":"battery_cycle",
-            "Type":"BCL_VOLTAGE",
-            "Multiplier":1
-        },
-        {
-            "Name":"critical-battery-cell",
-            "Type":"BCL_VOLTAGE",
-            "VirtualSensor":true,
-            "Formula":"COUNT_THRESHOLD",
-            "TriggerSensor": "vdroop1",
-            "Combination":["battery", "battery_cycle", "vdroop1"],
-            "Coefficient":[-10000, 400, 1000],
-            "HotThreshold":["NAN", "NAN", "NAN", "NAN", "NAN", 3.00, "NAN"],
-            "Multiplier":1,
-            "PollingDelay":0,
-            "PassiveDelay":1000,
-            "SendCallback":true
-        },
-        {
-            "Name":"FLASH_LED_REDUCE",
-            "Type":"UNKNOWN",
-            "VirtualSensor":true,
-            "Formula":"COUNT_THRESHOLD",
-            "TriggerSensor": "vdroop1",
-            "Combination":["battery", "battery_cycle", "vdroop1"],
-            "Coefficient":[-10000, 400, 1000],
-            "HotThreshold":["NAN", "NAN", "NAN", "NAN", 3.00, "NAN", "NAN"],
-            "Multiplier":1,
-            "PollingDelay":0,
-            "PassiveDelay":1000,
-            "SendCallback":true,
-            "SendPowerHint":true
-        },
-        {
-            "Name":"soc",
-            "Type":"BCL_PERCENTAGE",
-            "HotThreshold":["NAN", "NAN", 80, "NAN", "NAN", "NAN", "NAN"],
-            "Multiplier":1
-        },
-        {
-            "Name":"batoilo",
-            "Type":"BCL_CURRENT",
-            "HotThreshold":["NAN", "NAN", "NAN", "NAN", 5000, "NAN", "NAN"],
-            "HotHysteresis":[0.0, 0.0, 0.0, 0.0, 100, 0.0, 0.0],
-            "Multiplier":1,
-            "SendCallback":true,
-            "PollingDelay":0,
-            "PassiveDelay":1000
-        },
-        {
-            "Name":"BCL_AUDIO_BAACL",
-            "Type":"BCL_VOLTAGE",
-            "VirtualSensor":true,
-            "Formula":"COUNT_THRESHOLD",
-            "TriggerSensor": "soc",
-            "Combination":["battery", "soc"],
-            "Coefficient":[-25000, 80],
-            "HotThreshold":["NAN", "NAN",  "NAN", "NAN", 2.0, "NAN", "NAN"],
-            "PollingDelay":0,
-            "PassiveDelay":600000,
-            "Multiplier":1,
-            "SendCallback":true
-        },
-        {
-            "Name":"vdroop1",
-            "Type":"BCL_VOLTAGE",
-            "HotThreshold":["NAN", "NAN", "NAN", "NAN", 1000, "NAN", "NAN"],
-            "HotHysteresis":[0.0, 0.0, 0.0, 0.0, 100, 0.0, 0.0],
-            "Multiplier":1,
-            "SendCallback":true,
-            "PollingDelay":0,
-            "PassiveDelay":1000
-        },
-        {
-            "Name":"vdroop2",
-            "Type":"BCL_VOLTAGE",
-            "HotThreshold":["NAN", "NAN", "NAN", "NAN", 1200, "NAN", "NAN"],
-            "HotHysteresis":[0.0, 0.0, 0.0, 0.0, 100, 0.0, 0.0],
-            "Multiplier":1,
-            "SendCallback":true,
-            "PollingDelay":0,
-            "PassiveDelay":1000
-        },
-        {
-            "Name":"smpl_gm",
-            "Type":"BCL_VOLTAGE",
-            "HotThreshold":["NAN", "NAN", "NAN", "NAN", 1100, "NAN", "NAN"],
-            "HotHysteresis":[0.0, 0.0, 0.0, 0.0, 100, 0.0, 0.0],
-            "Multiplier":1,
-            "SendCallback":true,
-            "PollingDelay":0,
-            "PassiveDelay":1000
         },
         {
             "Name":"VIRTUAL-SKIN-SUB-1",

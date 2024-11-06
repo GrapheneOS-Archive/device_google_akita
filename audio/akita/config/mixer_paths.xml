@@ -748,7 +748,7 @@
     <path name="handset-mic">
         <ctl name="Mic Spatial Module Enable" value="1"/>
         <ctl name="BUILDIN MIC ID CAPTURE LIST" id="0" value="0"/>
-        <ctl name="BUILDIN MIC ID CAPTURE LIST" id="1" value="2"/>
+        <ctl name="BUILDIN MIC ID CAPTURE LIST" id="1" value="1"/>
         <ctl name="BUILDIN MIC ID CAPTURE LIST" id="2" value="-1"/>
         <ctl name="BUILDIN MIC ID CAPTURE LIST" id="3" value="-1"/>
         <ctl name="MIC DC Blocker" value="1"/>
@@ -760,8 +760,8 @@
 
     <path name="voice-handset-mic">
         <ctl name="BUILDIN MIC ID CAPTURE LIST" id="0" value="0"/>
-        <ctl name="BUILDIN MIC ID CAPTURE LIST" id="1" value="3"/>
-        <ctl name="BUILDIN MIC ID CAPTURE LIST" id="2" value="2"/>
+        <ctl name="BUILDIN MIC ID CAPTURE LIST" id="1" value="1"/>
+        <ctl name="BUILDIN MIC ID CAPTURE LIST" id="2" value="-1"/>
         <ctl name="BUILDIN MIC ID CAPTURE LIST" id="3" value="-1"/>
         <ctl name="MIC DC Blocker" value="1"/>
         <ctl name="MIC HW Gain At High Power Mode (cB)" value="130"/>
@@ -774,7 +774,7 @@
     <path name="speaker-mic">
         <ctl name="Mic Spatial Module Enable" value="1"/>
         <ctl name="BUILDIN MIC ID CAPTURE LIST" id="0" value="0"/>
-        <ctl name="BUILDIN MIC ID CAPTURE LIST" id="1" value="2"/>
+        <ctl name="BUILDIN MIC ID CAPTURE LIST" id="1" value="1"/>
         <ctl name="BUILDIN MIC ID CAPTURE LIST" id="2" value="-1"/>
         <ctl name="BUILDIN MIC ID CAPTURE LIST" id="3" value="-1"/>
         <ctl name="MIC DC Blocker" value="1"/>
@@ -786,8 +786,8 @@
 
     <path name="voice-speaker-mic">
         <ctl name="BUILDIN MIC ID CAPTURE LIST" id="0" value="0"/>
-        <ctl name="BUILDIN MIC ID CAPTURE LIST" id="1" value="3"/>
-        <ctl name="BUILDIN MIC ID CAPTURE LIST" id="2" value="2"/>
+        <ctl name="BUILDIN MIC ID CAPTURE LIST" id="1" value="1"/>
+        <ctl name="BUILDIN MIC ID CAPTURE LIST" id="2" value="-1"/>
         <ctl name="BUILDIN MIC ID CAPTURE LIST" id="3" value="-1"/>
         <ctl name="MIC DC Blocker" value="1"/>
         <ctl name="MIC HW Gain At High Power Mode (cB)" value="130"/>
@@ -800,7 +800,7 @@
     <path name="camcorder-mic">
         <ctl name="Mic Spatial Module Enable" value="1"/>
         <ctl name="BUILDIN MIC ID CAPTURE LIST" id="0" value="0"/>
-        <ctl name="BUILDIN MIC ID CAPTURE LIST" id="1" value="2"/>
+        <ctl name="BUILDIN MIC ID CAPTURE LIST" id="1" value="1"/>
         <ctl name="BUILDIN MIC ID CAPTURE LIST" id="2" value="-1"/>
         <ctl name="BUILDIN MIC ID CAPTURE LIST" id="3" value="-1"/>
         <ctl name="MIC DC Blocker" value="1"/>
@@ -812,7 +812,7 @@
 
     <path name="voice-recog-mic">
         <ctl name="BUILDIN MIC ID CAPTURE LIST" id="0" value="0"/>
-        <ctl name="BUILDIN MIC ID CAPTURE LIST" id="1" value="2"/>
+        <ctl name="BUILDIN MIC ID CAPTURE LIST" id="1" value="1"/>
         <ctl name="BUILDIN MIC ID CAPTURE LIST" id="2" value="-1"/>
         <ctl name="BUILDIN MIC ID CAPTURE LIST" id="3" value="-1"/>
         <ctl name="MIC DC Blocker" value="1"/>
@@ -825,7 +825,7 @@
     <path name="voice-recog-aec-mic">
         <ctl name="Audio Capture Eraser Enable" value="1"/>
         <ctl name="BUILDIN MIC ID CAPTURE LIST" id="0" value="0"/>
-        <ctl name="BUILDIN MIC ID CAPTURE LIST" id="1" value="2"/>
+        <ctl name="BUILDIN MIC ID CAPTURE LIST" id="1" value="1"/>
         <ctl name="BUILDIN MIC ID CAPTURE LIST" id="2" value="-1"/>
         <ctl name="BUILDIN MIC ID CAPTURE LIST" id="3" value="-1"/>
         <ctl name="MIC DC Blocker" value="1"/>
@@ -838,7 +838,7 @@
 
     <path name="unprocessed-mic">
         <ctl name="BUILDIN MIC ID CAPTURE LIST" id="0" value="0"/>
-        <ctl name="BUILDIN MIC ID CAPTURE LIST" id="1" value="2"/>
+        <ctl name="BUILDIN MIC ID CAPTURE LIST" id="1" value="1"/>
         <ctl name="BUILDIN MIC ID CAPTURE LIST" id="2" value="-1"/>
         <ctl name="BUILDIN MIC ID CAPTURE LIST" id="3" value="-1"/>
         <ctl name="MIC DC Blocker" value="1"/>
@@ -850,7 +850,7 @@
 
     <path name="unprocessed-dual-mic">
         <ctl name="BUILDIN MIC ID CAPTURE LIST" id="0" value="0"/>
-        <ctl name="BUILDIN MIC ID CAPTURE LIST" id="1" value="2"/>
+        <ctl name="BUILDIN MIC ID CAPTURE LIST" id="1" value="1"/>
         <ctl name="BUILDIN MIC ID CAPTURE LIST" id="2" value="-1"/>
         <ctl name="BUILDIN MIC ID CAPTURE LIST" id="3" value="-1"/>
         <ctl name="MIC DC Blocker" value="1"/>
@@ -862,7 +862,7 @@
 
     <path name="unprocessed-triple-mic">
         <ctl name="BUILDIN MIC ID CAPTURE LIST" id="0" value="0"/>
-        <ctl name="BUILDIN MIC ID CAPTURE LIST" id="1" value="2"/>
+        <ctl name="BUILDIN MIC ID CAPTURE LIST" id="1" value="1"/>
         <ctl name="BUILDIN MIC ID CAPTURE LIST" id="2" value="-1"/>
         <ctl name="BUILDIN MIC ID CAPTURE LIST" id="3" value="-1"/>
         <ctl name="MIC DC Blocker" value="1"/>
@@ -874,7 +874,7 @@
 
     <path name="ultrasound-mic">
         <ctl name="BUILDIN US MIC ID CAPTURE LIST" id="0" value="0"/>
-        <ctl name="BUILDIN US MIC ID CAPTURE LIST" id="1" value="2"/>
+        <ctl name="BUILDIN US MIC ID CAPTURE LIST" id="1" value="1"/>
         <ctl name="BUILDIN US MIC ID CAPTURE LIST" id="2" value="-1"/>
         <ctl name="BUILDIN US MIC ID CAPTURE LIST" id="3" value="-1"/>
     </path>
@@ -884,7 +884,7 @@
 
     <path name="bt-mic">
         <ctl name="BUILDIN MIC ID CAPTURE LIST" id="0" value="0"/>
-        <ctl name="BUILDIN MIC ID CAPTURE LIST" id="1" value="2"/>
+        <ctl name="BUILDIN MIC ID CAPTURE LIST" id="1" value="1"/>
         <ctl name="BUILDIN MIC ID CAPTURE LIST" id="2" value="-1"/>
         <ctl name="BUILDIN MIC ID CAPTURE LIST" id="3" value="-1"/>
         <ctl name="Audio Capture Mic Source" value="BT_MIC"/>
@@ -897,7 +897,7 @@
 
     <path name="usb-headset-mic">
         <ctl name="BUILDIN MIC ID CAPTURE LIST" id="0" value="0"/>
-        <ctl name="BUILDIN MIC ID CAPTURE LIST" id="1" value="2"/>
+        <ctl name="BUILDIN MIC ID CAPTURE LIST" id="1" value="1"/>
         <ctl name="BUILDIN MIC ID CAPTURE LIST" id="2" value="-1"/>
         <ctl name="BUILDIN MIC ID CAPTURE LIST" id="3" value="-1"/>
         <ctl name="Audio Capture Mic Source" value="USB_MIC"/>

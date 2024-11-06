@@ -31,7 +31,7 @@
     <item>34</item>
   </integer-array>
   <integer-array name="antenna_y">
-    <item>96</item>
+    <item>46</item>
   </integer-array>
   <bool name="nfc_observe_mode_supported">true</bool>
 </resources>
