@@ -1,5 +1,3 @@
-# Enable coredump funtcion for all the ROM.
-$(call soong_config_set_bool,sighandler,coredump,true)
 # Enable pixel gnss hal service
 -include vendor/google/gnss/aidl_service/pixel_gnss_hal.mk
 
