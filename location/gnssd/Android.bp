@@ -42,9 +42,14 @@ cc_prebuilt_binary {
     // Bypass because libhidltransport is deprecated
     // Bypass because libhwbinder is deprecated
     check_elf_files: false,
-    required: [
-        "libsighandler",
-    ],
+    product_variables: {
+        debuggable: {
+            required: [
+                "libsighandler",
+            ],
+        },
+    },
+
     init_rc: ["init.gnss.rc"],
     vintf_fragments: ["android.hardware.gnss@default.xml"],
 }
@@ -81,8 +86,14 @@ cc_prebuilt_binary {
     },
     // Bypass because libsitril-gps is Android.mk module
     check_elf_files: false,
+    product_variables: {
+        debuggable: {
+            required: [
+                "libsighandler",
+            ],
+        },
+    },
     required: [
         "libcustomgnss",
-        "libsighandler",
     ],
 }
