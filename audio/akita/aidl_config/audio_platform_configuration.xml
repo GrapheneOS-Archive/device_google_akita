@@ -107,6 +107,212 @@
     </enablement>
   </spatialCapture>
 
+  <microphones>
+    <microphone id="builtin_mic_1" location="MAINBODY" group="0" indexInTheGroup="0"
+      directionality="OMNI">
+      <device type="IN_MICROPHONE" address="bottom" />
+      <sensitivity levelDbfs="37.0" maxSplDb="132.5" minSplDb="28.5" />
+      <position x="0.0269" y="0.0058" z="0.0079" />
+      <orientation x="0.0" y="0.0" z="1.0" />
+      <frequencyResponse>
+        <point frequencyHz="100.00" levelDb="-0.78" />
+        <point frequencyHz="106.00" levelDb="-0.71" />
+        <point frequencyHz="112.00" levelDb="-0.64" />
+        <point frequencyHz="118.00" levelDb="-0.60" />
+        <point frequencyHz="125.00" levelDb="-0.55" />
+        <point frequencyHz="132.00" levelDb="-0.50" />
+        <point frequencyHz="140.00" levelDb="-0.47" />
+        <point frequencyHz="150.00" levelDb="-0.42" />
+        <point frequencyHz="160.00" levelDb="-0.39" />
+        <point frequencyHz="170.00" levelDb="-0.36" />
+        <point frequencyHz="180.00" levelDb="-0.34" />
+        <point frequencyHz="190.00" levelDb="-0.33" />
+        <point frequencyHz="200.00" levelDb="-0.32" />
+        <point frequencyHz="212.00" levelDb="-0.29" />
+        <point frequencyHz="224.00" levelDb="-0.28" />
+        <point frequencyHz="236.00" levelDb="-0.28" />
+        <point frequencyHz="250.00" levelDb="-0.27" />
+        <point frequencyHz="265.00" levelDb="-0.25" />
+        <point frequencyHz="280.00" levelDb="-0.25" />
+        <point frequencyHz="300.00" levelDb="-0.24" />
+        <point frequencyHz="315.00" levelDb="-0.23" />
+        <point frequencyHz="335.00" levelDb="-0.23" />
+        <point frequencyHz="355.00" levelDb="-0.22" />
+        <point frequencyHz="375.00" levelDb="-0.22" />
+        <point frequencyHz="400.00" levelDb="-0.19" />
+        <point frequencyHz="425.00" levelDb="-0.17" />
+        <point frequencyHz="450.00" levelDb="-0.15" />
+        <point frequencyHz="475.00" levelDb="-0.15" />
+        <point frequencyHz="500.00" levelDb="-0.14" />
+        <point frequencyHz="530.00" levelDb="-0.14" />
+        <point frequencyHz="560.00" levelDb="-0.12" />
+        <point frequencyHz="600.00" levelDb="-0.11" />
+        <point frequencyHz="630.00" levelDb="-0.10" />
+        <point frequencyHz="670.00" levelDb="-0.10" />
+        <point frequencyHz="710.00" levelDb="-0.08" />
+        <point frequencyHz="750.00" levelDb="-0.07" />
+        <point frequencyHz="800.00" levelDb="-0.07" />
+        <point frequencyHz="850.00" levelDb="-0.04" />
+        <point frequencyHz="900.00" levelDb="-0.03" />
+        <point frequencyHz="950.00" levelDb="-0.01" />
+        <point frequencyHz="1000.00" levelDb="0.00" />
+        <point frequencyHz="1060.00" levelDb="0.04" />
+        <point frequencyHz="1120.00" levelDb="0.06" />
+        <point frequencyHz="1180.00" levelDb="0.07" />
+        <point frequencyHz="1250.00" levelDb="0.08" />
+        <point frequencyHz="1320.00" levelDb="0.13" />
+        <point frequencyHz="1400.00" levelDb="0.09" />
+        <point frequencyHz="1500.00" levelDb="0.14" />
+        <point frequencyHz="1600.00" levelDb="0.19" />
+        <point frequencyHz="1700.00" levelDb="0.23" />
+        <point frequencyHz="1800.00" levelDb="0.28" />
+        <point frequencyHz="1900.00" levelDb="0.29" />
+        <point frequencyHz="2000.00" levelDb="0.31" />
+        <point frequencyHz="2120.00" levelDb="0.37" />
+        <point frequencyHz="2240.00" levelDb="0.88" />
+        <point frequencyHz="2360.00" levelDb="0.86" />
+        <point frequencyHz="2500.00" levelDb="0.77" />
+        <point frequencyHz="2650.00" levelDb="0.78" />
+        <point frequencyHz="2800.00" levelDb="0.84" />
+        <point frequencyHz="3000.00" levelDb="0.86" />
+        <point frequencyHz="3150.00" levelDb="1.05" />
+        <point frequencyHz="3350.00" levelDb="1.12" />
+        <point frequencyHz="3550.00" levelDb="1.18" />
+        <point frequencyHz="3750.00" levelDb="1.25" />
+        <point frequencyHz="4000.00" levelDb="1.43" />
+        <point frequencyHz="4250.00" levelDb="1.66" />
+        <point frequencyHz="4500.00" levelDb="1.83" />
+        <point frequencyHz="4750.00" levelDb="2.02" />
+        <point frequencyHz="5000.00" levelDb="2.23" />
+        <point frequencyHz="5300.00" levelDb="2.59" />
+        <point frequencyHz="5600.00" levelDb="2.84" />
+        <point frequencyHz="6000.00" levelDb="3.35" />
+        <point frequencyHz="6300.00" levelDb="4.01" />
+        <point frequencyHz="6700.00" levelDb="6.82" />
+        <point frequencyHz="7100.00" levelDb="6.62" />
+        <point frequencyHz="7500.00" levelDb="6.42" />
+        <point frequencyHz="8000.00" levelDb="7.30" />
+        <point frequencyHz="8500.00" levelDb="8.23" />
+        <point frequencyHz="9000.00" levelDb="7.54" />
+        <point frequencyHz="9500.00" levelDb="12.68" />
+        <point frequencyHz="10000.00" levelDb="13.76" />
+        <point frequencyHz="10600.00" levelDb="18.69" />
+        <point frequencyHz="11200.00" levelDb="19.68" />
+        <point frequencyHz="11800.00" levelDb="20.90" />
+        <point frequencyHz="12500.00" levelDb="23.70" />
+        <point frequencyHz="13200.00" levelDb="25.10" />
+        <point frequencyHz="14000.00" levelDb="21.65" />
+        <point frequencyHz="15000.00" levelDb="16.18" />
+        <point frequencyHz="16000.00" levelDb="18.84" />
+        <point frequencyHz="17000.00" levelDb="25.44" />
+        <point frequencyHz="18000.00" levelDb="23.48" />
+        <point frequencyHz="19000.00" levelDb="23.22" />
+        <point frequencyHz="20000.00" levelDb="24.89" />
+      </frequencyResponse>
+    </microphone>
+    <microphone id="builtin_mic_2" location="MAINBODY" group="0" indexInTheGroup="1"
+      directionality="OMNI">
+      <device type="IN_MICROPHONE_BACK" address="back" />
+      <sensitivity levelDbfs="-37.0" maxSplDb="132.5" minSplDb="28.5" />
+      <position x="0.0546" y="0.1456" z="0.00415" />
+      <orientation x="0.0" y="1.0" z="0.0" />
+      <frequencyResponse>
+        <point frequencyHz="106.00" levelDb="-0.75" />
+        <point frequencyHz="112.00" levelDb="-0.74" />
+        <point frequencyHz="118.00" levelDb="-0.69" />
+        <point frequencyHz="125.00" levelDb="-0.65" />
+        <point frequencyHz="132.00" levelDb="-0.62" />
+        <point frequencyHz="140.00" levelDb="-0.61" />
+        <point frequencyHz="150.00" levelDb="-0.56" />
+        <point frequencyHz="160.00" levelDb="-0.53" />
+        <point frequencyHz="170.00" levelDb="-0.50" />
+        <point frequencyHz="180.00" levelDb="-0.47" />
+        <point frequencyHz="190.00" levelDb="-0.43" />
+        <point frequencyHz="200.00" levelDb="-0.40" />
+        <point frequencyHz="212.00" levelDb="-0.37" />
+        <point frequencyHz="224.00" levelDb="-0.36" />
+        <point frequencyHz="236.00" levelDb="-0.33" />
+        <point frequencyHz="250.00" levelDb="-0.30" />
+        <point frequencyHz="265.00" levelDb="-0.28" />
+        <point frequencyHz="280.00" levelDb="-0.25" />
+        <point frequencyHz="300.00" levelDb="-0.24" />
+        <point frequencyHz="315.00" levelDb="-0.24" />
+        <point frequencyHz="335.00" levelDb="-0.24" />
+        <point frequencyHz="355.00" levelDb="-0.25" />
+        <point frequencyHz="375.00" levelDb="-0.24" />
+        <point frequencyHz="400.00" levelDb="-0.12" />
+        <point frequencyHz="425.00" levelDb="-0.10" />
+        <point frequencyHz="450.00" levelDb="-0.08" />
+        <point frequencyHz="475.00" levelDb="-0.09" />
+        <point frequencyHz="500.00" levelDb="-0.07" />
+        <point frequencyHz="530.00" levelDb="-0.07" />
+        <point frequencyHz="560.00" levelDb="-0.06" />
+        <point frequencyHz="600.00" levelDb="-0.06" />
+        <point frequencyHz="630.00" levelDb="-0.06" />
+        <point frequencyHz="670.00" levelDb="-0.05" />
+        <point frequencyHz="710.00" levelDb="-0.04" />
+        <point frequencyHz="750.00" levelDb="-0.05" />
+        <point frequencyHz="800.00" levelDb="-0.04" />
+        <point frequencyHz="850.00" levelDb="-0.01" />
+        <point frequencyHz="900.00" levelDb="0.02" />
+        <point frequencyHz="950.00" levelDb="0.02" />
+        <point frequencyHz="1000.00" levelDb="0.00" />
+        <point frequencyHz="1060.00" levelDb="0.02" />
+        <point frequencyHz="1120.00" levelDb="0.03" />
+        <point frequencyHz="1180.00" levelDb="0.07" />
+        <point frequencyHz="1250.00" levelDb="0.10" />
+        <point frequencyHz="1320.00" levelDb="0.10" />
+        <point frequencyHz="1400.00" levelDb="0.13" />
+        <point frequencyHz="1500.00" levelDb="0.01" />
+        <point frequencyHz="1600.00" levelDb="0.01" />
+        <point frequencyHz="1700.00" levelDb="0.10" />
+        <point frequencyHz="1800.00" levelDb="0.11" />
+        <point frequencyHz="1900.00" levelDb="0.19" />
+        <point frequencyHz="2000.00" levelDb="0.24" />
+        <point frequencyHz="2120.00" levelDb="0.38" />
+        <point frequencyHz="2240.00" levelDb="0.46" />
+        <point frequencyHz="2360.00" levelDb="0.26" />
+        <point frequencyHz="2500.00" levelDb="0.27" />
+        <point frequencyHz="2650.00" levelDb="0.43" />
+        <point frequencyHz="2800.00" levelDb="0.76" />
+        <point frequencyHz="3000.00" levelDb="0.75" />
+        <point frequencyHz="3150.00" levelDb="1.09" />
+        <point frequencyHz="3350.00" levelDb="1.09" />
+        <point frequencyHz="3550.00" levelDb="0.94" />
+        <point frequencyHz="3750.00" levelDb="1.06" />
+        <point frequencyHz="4000.00" levelDb="1.21" />
+        <point frequencyHz="4250.00" levelDb="1.47" />
+        <point frequencyHz="4500.00" levelDb="1.45" />
+        <point frequencyHz="4750.00" levelDb="1.36" />
+        <point frequencyHz="5000.00" levelDb="2.07" />
+        <point frequencyHz="5300.00" levelDb="2.85" />
+        <point frequencyHz="5600.00" levelDb="2.90" />
+        <point frequencyHz="6000.00" levelDb="3.85" />
+        <point frequencyHz="6300.00" levelDb="4.65" />
+        <point frequencyHz="6700.00" levelDb="5.84" />
+        <point frequencyHz="7100.00" levelDb="5.46" />
+        <point frequencyHz="7500.00" levelDb="6.15" />
+        <point frequencyHz="8000.00" levelDb="7.50" />
+        <point frequencyHz="8500.00" levelDb="8.30" />
+        <point frequencyHz="9000.00" levelDb="10.62" />
+        <point frequencyHz="9500.00" levelDb="12.70" />
+        <point frequencyHz="10000.00" levelDb="16.65" />
+        <point frequencyHz="10600.00" levelDb="20.95" />
+        <point frequencyHz="11200.00" levelDb="25.41" />
+        <point frequencyHz="11800.00" levelDb="26.32" />
+        <point frequencyHz="12500.00" levelDb="20.20" />
+        <point frequencyHz="13200.00" levelDb="16.60" />
+        <point frequencyHz="14000.00" levelDb="11.24" />
+        <point frequencyHz="15000.00" levelDb="7.85" />
+        <point frequencyHz="16000.00" levelDb="7.62" />
+        <point frequencyHz="17000.00" levelDb="20.19" />
+        <point frequencyHz="18000.00" levelDb="7.32" />
+        <point frequencyHz="19000.00" levelDb="2.87" />
+        <point frequencyHz="20000.00" levelDb="5.18" />
+      </frequencyResponse>
+    </microphone>
+  </microphones>
+
   <xi:include href="audio_policy_volumes.xml" />
   <xi:include href="default_volume_tables.xml" />
 </audioPlatformConfiguration>
