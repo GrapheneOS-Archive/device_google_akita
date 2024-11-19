@@ -444,3 +444,14 @@ PRODUCT_CHECK_PREBUILT_MAX_PAGE_SIZE := true
 # Akita: 0x410F
 PRODUCT_PRODUCT_PROPERTIES += \
     bluetooth.device_id.product_id=16655
+
+# Set support for LEA multicodec
+PRODUCT_PRODUCT_PROPERTIES += \
+    bluetooth.core.le_audio.codec_extension_aidl.enabled=true
+
+# LE Audio configuration scenarios
+PRODUCT_COPY_FILES += \
+    device/google/akita/bluetooth/audio_set_scenarios.json:$(TARGET_COPY_OUT_VENDOR)/etc/aidl/le_audio/aidl_audio_set_scenarios.json
+
+PRODUCT_COPY_FILES += \
+    device/google/akita/bluetooth/audio_set_configurations.json:$(TARGET_COPY_OUT_VENDOR)/etc/aidl/le_audio/aidl_audio_set_configurations.json
