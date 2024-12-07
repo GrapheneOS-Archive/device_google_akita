@@ -1449,8 +1449,8 @@
   <!-- Acoustic shock enabled: "adapted-speaker-acoustic-shock"              -->
   <!-- Both are enabled: "adapted-speaker-battery-throttled-acoustic-shock"  -->
   <path name="adapted-speaker">
-    <ctl name="Boost Peak Current Limit" value="2.50A" />
-    <ctl name="R Boost Peak Current Limit" value="2.50A" />
+    <ctl name="Boost Peak Current Limit" value="3.50A" />
+    <ctl name="R Boost Peak Current Limit" value="3.50A" />
     <ctl name="Digital PCM Volume" value="817" />
     <ctl name="R Digital PCM Volume" value="817" />
   </path>
@@ -1479,7 +1479,7 @@
   <path name="adapted-voice-speaker">
     <ctl name="R Boost Peak Current Limit" value="3.50A" />
     <ctl name="Boost Peak Current Limit" value="3.50A" />
-    <ctl name="Digital PCM Volume" value="800" />
+    <ctl name="Digital PCM Volume" value="817" />
     <ctl name="R Digital PCM Volume" value="817" />
   </path>
   <path name="adapted-voice-speaker-battery-throttled">
