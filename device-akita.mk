@@ -455,3 +455,8 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_COPY_FILES += \
     device/google/akita/bluetooth/audio_set_configurations.json:$(TARGET_COPY_OUT_VENDOR)/etc/aidl/le_audio/aidl_audio_set_configurations.json
+
+# Enable APF by default
+PRODUCT_VENDOR_PROPERTIES += \
+    vendor.powerhal.apf_disabled=false \
+    vendor.powerhal.apf_enabled=true
