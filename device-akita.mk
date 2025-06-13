@@ -49,10 +49,6 @@ $(call soong_config_set,lyric,camera_hardware,akita)
 $(call soong_config_set,lyric,tuning_product,akita)
 $(call soong_config_set,google3a_config,target_device,akita)
 
-# Init files
-PRODUCT_COPY_FILES += \
-	device/google/akita/conf/init.akita.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.akita.rc
-
 # Recovery files
 PRODUCT_COPY_FILES += \
         device/google/akita/conf/init.recovery.device.rc:$(TARGET_COPY_OUT_RECOVERY)/root/init.recovery.akita.rc
