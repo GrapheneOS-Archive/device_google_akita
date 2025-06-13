@@ -67,11 +67,6 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += vendor.primarydisplay.lhbm.frames_to_reach
 
 PRODUCT_SOONG_NAMESPACES += device/google/akita/radio/coex
 
-# Coex Configs
-PRODUCT_PACKAGES += \
-        display_primary_mipi_coex_table \
-        display_primary_ssc_coex_table
-
 PRODUCT_PROPERTY_OVERRIDES += \
 	persist.vendor.camera.adjust_backend_min_freq_for_1p_front_video_1080p_30fps=1 \
 	persist.vendor.camera.adjust_backend_min_freq_for_video_120fps=1 \
