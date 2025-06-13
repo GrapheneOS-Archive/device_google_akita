@@ -133,29 +133,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
 	device/google/akita/powerhint-akita.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
 
-# Bluetooth HAL
-PRODUCT_COPY_FILES += \
-	device/google/akita/bluetooth/bt_vendor_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth/bt_vendor_overlay.conf
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.bluetooth.a2dp_offload.supported=true \
     persist.bluetooth.a2dp_offload.disabled=false \
     persist.bluetooth.a2dp_offload.cap=sbc-aac-aptx-aptxhd-ldac
-
-# Bluetooth Tx power caps
-PRODUCT_COPY_FILES += \
-    device/google/akita/bluetooth/bluetooth_power_limits_AK3.csv:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_power_limits.csv \
-    device/google/akita/bluetooth/bluetooth_power_limits_AK3_G6GPR_CA.csv:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_power_limits_G6GPR_CA.csv \
-    device/google/akita/bluetooth/bluetooth_power_limits_AK3_G6GPR_EU.csv:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_power_limits_G6GPR_EU.csv \
-    device/google/akita/bluetooth/bluetooth_power_limits_AK3_G6GPR_US.csv:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_power_limits_G6GPR_US.csv \
-    device/google/akita/bluetooth/bluetooth_power_limits_AK3_G8HHN_EU.csv:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_power_limits_G8HHN_EU.csv \
-    device/google/akita/bluetooth/bluetooth_power_limits_AK3_G8HHN_US.csv:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_power_limits_G8HHN_US.csv \
-    device/google/akita/bluetooth/bluetooth_power_limits_AK3_G576D_CA.csv:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_power_limits_G576D_CA.csv \
-    device/google/akita/bluetooth/bluetooth_power_limits_AK3_G576D_EU.csv:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_power_limits_G576D_EU.csv \
-    device/google/akita/bluetooth/bluetooth_power_limits_AK3_G576D_JP.csv:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_power_limits_G576D_JP.csv \
-    device/google/akita/bluetooth/bluetooth_power_limits_AK3_G576D_US.csv:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_power_limits_G576D_US.csv \
-    device/google/akita/bluetooth/bluetooth_power_limits_AK3_GKV4X_CA.csv:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_power_limits_GKV4X_CA.csv \
-    device/google/akita/bluetooth/bluetooth_power_limits_AK3_GKV4X_EU.csv:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_power_limits_GKV4X_EU.csv \
-    device/google/akita/bluetooth/bluetooth_power_limits_AK3_GKV4X_US.csv:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_power_limits_GKV4X_US.csv
 
 # POF
 PRODUCT_PRODUCT_PROPERTIES += \
@@ -204,10 +185,6 @@ PRODUCT_PRODUCT_PROPERTIES += \
 # Include Bluetooth soong namespace
 PRODUCT_SOONG_NAMESPACES += \
     device/google/akita/bluetooth
-
-# Bluetooth LE Auido offload capabilities setting
-PRODUCT_PACKAGES += \
-    le_audio_codec_capabilities.xml
 
 # LE Audio Lunch Config for Phase 1 (LE audio toggle hidden by default)
 PRODUCT_PRODUCT_PROPERTIES += \
@@ -442,13 +419,6 @@ PRODUCT_PRODUCT_PROPERTIES += \
 # Set support for LEA multicodec
 PRODUCT_PRODUCT_PROPERTIES += \
     bluetooth.core.le_audio.codec_extension_aidl.enabled=true
-
-# LE Audio configuration scenarios
-PRODUCT_COPY_FILES += \
-    device/google/akita/bluetooth/audio_set_scenarios.json:$(TARGET_COPY_OUT_VENDOR)/etc/aidl/le_audio/aidl_audio_set_scenarios.json
-
-PRODUCT_COPY_FILES += \
-    device/google/akita/bluetooth/audio_set_configurations.json:$(TARGET_COPY_OUT_VENDOR)/etc/aidl/le_audio/aidl_audio_set_configurations.json
 
 # Enable APF by default
 PRODUCT_VENDOR_PROPERTIES += \
