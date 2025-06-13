@@ -283,10 +283,6 @@ PRODUCT_PACKAGES += \
 # 	ro.hardware.keystore=software \
 # 	ro.hardware.gatekeeper=software
 
-# PowerStats HAL
-PRODUCT_SOONG_NAMESPACES += \
-    device/google/akita/powerstats/akita
-
 # WiFi Overlay
 PRODUCT_PACKAGES += \
 	WifiOverlay2024Mid
