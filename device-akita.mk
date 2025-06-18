@@ -77,24 +77,6 @@ PRODUCT_COPY_FILES += \
 	frameworks/native/data/etc/android.hardware.se.omapi.ese.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.se.omapi.ese.xml \
 	frameworks/native/data/etc/android.hardware.se.omapi.uicc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.se.omapi.uicc.xml \
 
-ifeq ($(USE_AUDIO_HAL_AIDL),true)
-# AIDL
-
-else
-# HIDL
-
-# Spatial Audio
-PRODUCT_PACKAGES += \
-	libspatialaudio \
-	librondo
-
-# Sound Dose
-PRODUCT_PACKAGES += \
-	android.hardware.audio.sounddose-vendor-impl \
-	audio_sounddose_aoc \
-
-endif
-
 # Audio CCA property
 PRODUCT_PROPERTY_OVERRIDES += \
 	persist.vendor.audio.cca.enabled=false
