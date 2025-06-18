@@ -15,6 +15,3 @@
 #
 
 $(call inherit-product, device/google/akita/device-akita.mk)
-
-# preloaded_nanoapps.json
-PRODUCT_SOONG_NAMESPACES += vendor/google_contexthub/devices/p23_common
