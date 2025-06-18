@@ -88,11 +88,6 @@ PRODUCT_PACKAGES += \
 # include GNSSD
 include device/google/akita/location/gnssd/device-gnss.mk
 
-# Set zram size
-PRODUCT_VENDOR_PROPERTIES += \
-	vendor.zram.size=50p \
-	persist.device_config.configuration.disable_rescue_party=true
-
 # Increase thread priority for nodes stop
 PRODUCT_VENDOR_PROPERTIES += \
 	persist.vendor.camera.increase_thread_priority_nodes_stop=true
