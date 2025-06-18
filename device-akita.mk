@@ -128,15 +128,6 @@ endif
 PRODUCT_NO_BIONIC_PAGE_SIZE_MACRO := true
 PRODUCT_CHECK_PREBUILT_MAX_PAGE_SIZE := true
 
-# Bluetooth device id
-# Akita: 0x410F
-PRODUCT_PRODUCT_PROPERTIES += \
-    bluetooth.device_id.product_id=16655
-
-# Set support for LEA multicodec
-PRODUCT_PRODUCT_PROPERTIES += \
-    bluetooth.core.le_audio.codec_extension_aidl.enabled=true
-
 # Enable APF by default
 PRODUCT_VENDOR_PROPERTIES += \
     vendor.powerhal.apf_disabled=false \
