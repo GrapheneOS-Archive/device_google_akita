@@ -55,24 +55,6 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_SOONG_NAMESPACES += device/google/akita/radio/coex
 
-PRODUCT_PROPERTY_OVERRIDES += \
-	persist.vendor.camera.adjust_backend_min_freq_for_1p_front_video_1080p_30fps=1 \
-	persist.vendor.camera.adjust_backend_min_freq_for_video_120fps=1 \
-	persist.vendor.camera.adjust_cam_uclamp_min_for_1p_rear_video_60fps=1 \
-	persist.vendor.camera.extended_launch_boost=1 \
-	persist.vendor.camera.optimized_tnr_freq=1 \
-	vendor.camera.debug.enable_software_post_sharpen_node=false \
-	vendor.camera.allow_sensor_binning_aspect_ratio_to_override_itp_output=false \
-	vendor.camera.debug.enable_blending_node=false
-
-# Enable front camera always binning for 720P or smaller resolution
-PRODUCT_VENDOR_PROPERTIES += \
-    persist.vendor.camera.front_720P_always_binning=true
-
-# Enable camera exif model/make reporting
-PRODUCT_VENDOR_PROPERTIES += \
-    persist.vendor.camera.exif_reveal_make_model=true
-
 # Media Performance Class 13
 PRODUCT_PROPERTY_OVERRIDES += ro.odm.build.media_performance_class=33
 
