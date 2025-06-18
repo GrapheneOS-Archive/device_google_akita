@@ -109,10 +109,6 @@ ifeq ($(RELEASE_IS_SMR), true)
     endif
 endif
 
-# Enable DeviceAsWebcam support
-PRODUCT_VENDOR_PROPERTIES += \
-    ro.usb.uvc.enabled=true
-
 # Window Extensions
 $(call inherit-product, $(SRC_TARGET_DIR)/product/window_extensions.mk)
 
