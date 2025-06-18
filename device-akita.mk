@@ -85,9 +85,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
 	WifiOverlay2024Mid
 
-# Trusty liboemcrypto.so
-PRODUCT_SOONG_NAMESPACES += vendor/google_devices/akita/prebuilts
-
 # include GNSSD
 include device/google/akita/location/gnssd/device-gnss.mk
 
