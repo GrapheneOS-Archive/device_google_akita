@@ -88,10 +88,6 @@ PRODUCT_PACKAGES += \
 # include GNSSD
 include device/google/akita/location/gnssd/device-gnss.mk
 
-# Increase thread priority for nodes stop
-PRODUCT_VENDOR_PROPERTIES += \
-	persist.vendor.camera.increase_thread_priority_nodes_stop=true
-
 # Fingerprint HAL
 GOODIX_CONFIG_BUILD_VERSION := g7_trusty
 $(call inherit-product-if-exists, vendor/goodix/udfps/configuration/udfps_common.mk)
