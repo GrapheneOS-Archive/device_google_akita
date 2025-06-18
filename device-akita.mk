@@ -102,33 +102,10 @@ $(call soong_config_set,haptics,kernel_ver,v$(subst .,_,$(TARGET_LINUX_KERNEL_VE
 ADAPTIVE_HAPTICS_FEATURE := adaptive_haptics_v1
 ACTUATOR_MODEL := legacy_zlra_actuator
 
-# Increment the SVN for any official public releases
-ifdef RELEASE_SVN_AKITA
-TARGET_SVN ?= $(RELEASE_SVN_AKITA)
-else
-# Set this for older releases that don't use build flag
-TARGET_SVN ?= 21
-endif
-
-PRODUCT_VENDOR_PROPERTIES += \
-    ro.vendor.build.svn=$(TARGET_SVN)
-
-# Set device family property for SMR
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.build.device_family=HK3SB3AK3
-
 # Set build properties for SMR builds
 ifeq ($(RELEASE_IS_SMR), true)
     ifneq (,$(RELEASE_BASE_OS_AKITA))
         PRODUCT_BASE_OS := $(RELEASE_BASE_OS_AKITA)
-    endif
-endif
-
-# Set build properties for EMR builds
-ifeq ($(RELEASE_IS_EMR), true)
-    ifneq (,$(RELEASE_BASE_OS_AKITA))
-        PRODUCT_PROPERTY_OVERRIDES += \
-        ro.build.version.emergency_base_os=$(RELEASE_BASE_OS_AKITA)
     endif
 endif
 
