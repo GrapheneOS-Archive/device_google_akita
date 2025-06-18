@@ -97,14 +97,6 @@ else
 $(call inherit-product-if-exists, vendor/goodix/udfps/configuration/udfps_factory.mk)
 endif
 
-PRODUCT_VENDOR_PROPERTIES += \
-    persist.vendor.udfps.als_feed_forward_supported=true \
-    persist.vendor.udfps.lhbm_controlled_in_hal_supported=true
-
-# Fingerprint exposure compensation
-PRODUCT_VENDOR_PROPERTIES += \
-    persist.vendor.udfps.auto_exposure_compensation_supported=true
-
 # OIS with system imu
 PRODUCT_VENDOR_PROPERTIES += \
     persist.vendor.camera.ois_with_system_imu=true
