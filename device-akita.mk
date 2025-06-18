@@ -128,11 +128,6 @@ endif
 PRODUCT_NO_BIONIC_PAGE_SIZE_MACRO := true
 PRODUCT_CHECK_PREBUILT_MAX_PAGE_SIZE := true
 
-# Enable APF by default
-PRODUCT_VENDOR_PROPERTIES += \
-    vendor.powerhal.apf_disabled=false \
-    vendor.powerhal.apf_enabled=true
-
 # sysconfigs from stock OS
 PRODUCT_COPY_FILES += \
     device/google/akita/product-sysconfig-stock.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/product-sysconfig-stock.xml
