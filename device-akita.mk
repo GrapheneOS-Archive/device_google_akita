@@ -53,14 +53,6 @@ $(call soong_config_set,google3a_config,target_device,akita)
 PRODUCT_COPY_FILES += \
         device/google/akita/conf/init.recovery.device.rc:$(TARGET_COPY_OUT_RECOVERY)/root/init.recovery.akita.rc
 
-PRODUCT_VENDOR_PROPERTIES += \
-    vendor.primarydisplay.op.hs_hz=120 \
-    vendor.primarydisplay.op.ns_hz=60 \
-    vendor.primarydisplay.op.peak_refresh_rate=60
-
-# lhbm peak brightness delay: decided by kernel
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES += vendor.primarydisplay.lhbm.frames_to_reach_peak_brightness=0
-
 PRODUCT_SOONG_NAMESPACES += device/google/akita/radio/coex
 
 PRODUCT_PROPERTY_OVERRIDES += \
