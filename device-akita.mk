@@ -110,25 +110,10 @@ else
 TARGET_SVN ?= 21
 endif
 
-PRODUCT_VENDOR_PROPERTIES += \
-    ro.vendor.build.svn=$(TARGET_SVN)
-
-# Set device family property for SMR
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.build.device_family=HK3SB3AK3
-
 # Set build properties for SMR builds
 ifeq ($(RELEASE_IS_SMR), true)
     ifneq (,$(RELEASE_BASE_OS_AKITA))
         PRODUCT_BASE_OS := $(RELEASE_BASE_OS_AKITA)
-    endif
-endif
-
-# Set build properties for EMR builds
-ifeq ($(RELEASE_IS_EMR), true)
-    ifneq (,$(RELEASE_BASE_OS_AKITA))
-        PRODUCT_PROPERTY_OVERRIDES += \
-        ro.build.version.emergency_base_os=$(RELEASE_BASE_OS_AKITA)
     endif
 endif
 
