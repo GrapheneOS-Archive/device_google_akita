@@ -32,8 +32,6 @@ $(call inherit-product-if-exists, vendor/google_devices/akita/proprietary/akita/
 $(call inherit-product-if-exists, vendor/google_devices/akita/proprietary/device-vendor.mk)
 $(call inherit-product-if-exists, vendor/google_devices/akita/proprietary/WallpapersAkita.mk)
 
-DEVICE_PACKAGE_OVERLAYS += device/google/akita/akita/overlay
-
 DEVICE_PACKAGES += GosAkitaOverlay
 
 ifeq ($(RELEASE_PIXEL_AIDL_AUDIO_HAL_ZUMA),true)
@@ -68,8 +66,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
 	$(RELEASE_PACKAGE_NFC_STACK) \
 	Tag \
-	android.hardware.nfc-service.st \
-	NfcOverlayAkita
+	android.hardware.nfc-service.st
 
 # SecureElement
 PRODUCT_PACKAGES += \
@@ -78,14 +75,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
 	frameworks/native/data/etc/android.hardware.se.omapi.ese.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.se.omapi.ese.xml \
 	frameworks/native/data/etc/android.hardware.se.omapi.uicc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.se.omapi.uicc.xml \
-
-# Settings Overlay
-PRODUCT_PACKAGES += \
-    SettingsAkitaOverlay
-
-# WiFi Overlay
-PRODUCT_PACKAGES += \
-	WifiOverlay2024Mid
 
 # include GNSSD
 include device/google/akita/location/gnssd/device-gnss.mk
