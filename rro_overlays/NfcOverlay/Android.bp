@@ -1,9 +1,0 @@
-package {
-    default_applicable_licenses: ["device_google_akita_license"],
-}
-
-runtime_resource_overlay {
-    name: "NfcOverlayAkita",
-    sdk_version: "current",
-    product_specific: true
-}
