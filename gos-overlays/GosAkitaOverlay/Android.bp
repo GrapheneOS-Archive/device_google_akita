@@ -1,0 +1,1 @@
+runtime_resource_overlay { name: "GosAkitaOverlay", product_specific: true, }

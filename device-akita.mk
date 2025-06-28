@@ -32,6 +32,8 @@ $(call inherit-product-if-exists, vendor/google_devices/akita/proprietary/akita/
 $(call inherit-product-if-exists, vendor/google_devices/akita/proprietary/device-vendor.mk)
 $(call inherit-product-if-exists, vendor/google_devices/akita/proprietary/WallpapersAkita.mk)
 
+DEVICE_PACKAGES += GosAkitaOverlay
+
 ifeq ($(RELEASE_PIXEL_AIDL_AUDIO_HAL_ZUMA),true)
 USE_AUDIO_HAL_AIDL := true
 endif
