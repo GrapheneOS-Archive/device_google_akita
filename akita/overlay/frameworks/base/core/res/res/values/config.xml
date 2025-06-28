@@ -310,5 +310,4 @@
 
     <string name="config_gnssPsdsType">samsung</string>
 
-    <integer name="config_multiuserMaxRunningUsers">6</integer>
 </resources>
